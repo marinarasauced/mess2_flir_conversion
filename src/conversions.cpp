@@ -37,7 +37,7 @@ namespace mess2_flir_conversions
                 if (image.channels() == 1) {
                     double pixel = static_cast<double>(image.at<uchar>(iter, jter));
                     double temperature = convert_pixel_to_temperature(pixel, c1, c2);
-                    std::cout << temperature << std::endl;
+                    std::cout << pixel << ", " << temperature << std::endl;
                     thermal.push_back(temperature);
                 } else if (image.channels() == 3) {
                     // not currently supported

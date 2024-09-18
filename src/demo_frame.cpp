@@ -1,6 +1,6 @@
 
 #include "mess2_flir_conversions/conversions.hpp"
-#include "mess2_flir_conversions/frame.hpp"
+#include "mess2_flir_conversions/demo_frame.hpp"
 
 namespace mess2_flir_conversions
 {
@@ -18,9 +18,9 @@ FrameConversion::FrameConversion() : Node("frame_conversion")
 
     // set attributes for temperature units and gain mode
     if (mode_gain_ == "high") {
-        c1_ = 0.04;
+        c1_ = 0.01;
     } else if (mode_gain_ == "low") {
-        c1_ = 0.4;
+        c1_ = 0.1;
     } else {
         throw std::runtime_error("mode_gain must be high or low");
     }
