@@ -1,5 +1,5 @@
-#ifndef MESS2_FLIR_CONVERSION_DEMO_FRAME_HPP
-#define MESS2_FLIR_CONVERSION_DEMO_FRAME_HPP
+#ifndef MESS2_FLIR_CONVERSION_DEMO1_HPP
+#define MESS2_FLIR_CONVERSION_DEMO1_HPP
 
 #include <cmath>
 #include <cstddef>
@@ -46,4 +46,4 @@ private:
 };
 } // namespace mess2_flir_conversions
 
-#endif // MESS2_FLIR_CONVERSION_DEMO_FRAME_HPP
+#endif // MESS2_FLIR_CONVERSION_DEMO1_HPP

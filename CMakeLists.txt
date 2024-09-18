@@ -20,9 +20,9 @@ include_directories(
 )
 
 add_library(_flir_conversions SHARED src/conversions.cpp)
-add_executable(demo_frame src/demo_frame.cpp)
+add_executable(demo1 src/demo1.cpp)
 
-target_link_libraries(demo_frame _flir_conversions)
+target_link_libraries(demo1 _flir_conversions)
 
 ament_target_dependencies(
   _flir_conversions
@@ -33,7 +33,7 @@ ament_target_dependencies(
 )
 
 ament_target_dependencies(
-  demo_frame
+  demo1
   "rclcpp"
   "cv_bridge"
 )
@@ -45,7 +45,7 @@ install(
 )
 
 install(
-  TARGETS demo_frame
+  TARGETS demo1
   EXPORT export_mess2_flir_conversions
   DESTINATION lib/${PROJECT_NAME}
 )

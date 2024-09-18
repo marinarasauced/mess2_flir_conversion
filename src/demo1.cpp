@@ -1,6 +1,6 @@
 
 #include "mess2_flir_conversions/conversions.hpp"
-#include "mess2_flir_conversions/demo_frame.hpp"
+#include "mess2_flir_conversions/demo1.hpp"
 
 namespace mess2_flir_conversions
 {
@@ -8,7 +8,7 @@ FrameConversion::FrameConversion() : Node("frame_conversion")
 {
     // declare parameters
     this->declare_parameter("mode_gain", "high");
-    this->declare_parameter("path_frame", "/home/marinarasauced/Projets/test_ws/install/mess2_flir_conversions/share/mess2_flir_conversions/config/template.jpg");
+    this->declare_parameter("path_frame", "/home/marinarasauced/Projets/test_ws/install/mess2_flir_conversions/share/mess2_flir_conversions/config/flir1_1726593651001957326.jpg");
     this->declare_parameter("units_temperature", "C");
     
     // retrieve parameters
